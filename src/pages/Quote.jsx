@@ -8,7 +8,7 @@ import wimg2 from '../assets/quote/windows/Double-Hung.png';
 import wimg3 from '../assets/quote/windows/Angle-Top.png';
 
 import Radio from '../components/Radio';
-import Masthead from '../components/Masthead';
+import Masthead from '../components/NewMasthead';
 import Image from '../components/SVGPicker';
 import Three from './3D';
 
@@ -813,8 +813,10 @@ export default function Quote() {
 							</div>
 						</div>
 					) : (
-						<div className='text-center text-xl'>
-							Select Window and Glass Types to see all other options
+						<div className='border p-2 flex flex-col justify-center border-gray-500 bg-yellow-100'>
+							<div className='font-bold text-textPrimary text-center  text-2xl '>
+								Select Window and Glass Types to see all other options
+							</div>
 						</div>
 					)}
 				</div>

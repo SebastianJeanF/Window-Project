@@ -1,7 +1,7 @@
 import FormModal from '../modals/FormModal';
 // import Form from '../modals/Modal';
 import openModal from '../modals/Modal';
-import Masthead from '../components/Masthead';
+import Masthead from '../components/NewMasthead';
 
 import img1 from '../assets/house.jpg';
 import img2 from '../assets/window.jpg';
@@ -214,9 +214,9 @@ function Contact() {
 			<Masthead
 				img={img1}
 				title={'Contact Us'}
-				message={"Please let us know how we can help, and we'll be in touch shortly."}></Masthead>
-			<div className=' navmd:flex justify-center'>
-				<section className='mt-4 p-5 navmd:w-1/2'>
+				subtitle={"Please let us know how we can help, and we'll be in touch shortly."}></Masthead>
+			<div className=' lg:flex justify-center'>
+				<section className='mt-4 p-5 lg:w-1/2'>
 					<div className='container    mx-auto mb-5 justify-around'>
 						<div className='font-medium text-2xl mb-5'>
 							We assure your complete satisfaction throughout your window installation journey with
@@ -261,15 +261,16 @@ function Contact() {
 							</div>
 						</div>
 					</div>
-					<div className='container pb-5 mb-5 xl:w-1/2 xl:mx-auto flex flex-col justify-around'>
+					<div className='container mt-5 pb-5 mb-5 xl:w-1/2 mx-auto flex flex-col justify-around'>
 						<div>
-							<h1 className='text-4xl font-medium text-center mb-4'>Contact Info</h1>
-							<ul className='list-group list-group-flush lead'>
-								<li className='text-xl mb-2 list-group-item'>
+							<h1 className='text-4xl font-medium text-center '>Contact Info</h1>
+							<hr className='mx-auto'></hr>
+							<ul className='list-group list-group-flush lead '>
+								<li className='text-xl mb-2  text-center list-group-item'>
 									<span className='font-medium'>Email: </span>uniquewindowsrenovations@gmail.com
 								</li>
-								<hr class='h-px my-4 bg-gray-200 border-0 dark:bg-gray-700' />
-								<li className='text-xl mb-2 list-group-item'>
+								<div className='h-px my-4 bg-gray-200 border-0 dark:bg-gray-700'></div>
+								<li className='text-xl mb-2 text-center list-group-item'>
 									<span className='font-medium'>Phone Number: </span>770-990-6603
 								</li>
 							</ul>

@@ -19,7 +19,7 @@ function Masthead({ img, title, message }) {
 				style={styles.overlay}
 				className='absolute h-full w-full flex justify-center items-center'>
 				<div className='flex-col text-center '>
-					<div className='font-bold text-5xl mb-9'>{title}</div>
+					<div className='font-bold home-test text-5xl mb-9'>{title}</div>
 					<div className='font-bold text-xl'>{message || ''}</div>
 				</div>
 			</div>
