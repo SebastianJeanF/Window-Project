@@ -72,7 +72,7 @@ function Products() {
 			<section style={{ backgroundColor: '#F7F7F7' }}>
 				<div className='pt-6 px-6'>
 					<div className='text-center text-2xl font-semibold'>Explore By Material</div>
-					<div className='flex justify-center gap-1 mt-6 pb-8'>
+					<div className='flex flex-col md:flex-row justify-center items-center gap-1 mt-6 pb-8'>
 						<div
 							style={{ ...styles.all, ...styles.wood, height: '300px', width: '300px' }}
 							className='relative  '>

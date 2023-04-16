@@ -13,15 +13,15 @@ import { useRef, useState } from 'react';
 
 function Form() {
 	return (
-		<div className=' p-6 bg-gray-100 flex items-center justify-center'>
-			<div className='container max-w-screen-lg mx-auto'>
+		<div className='container  p-6  mt-4 w-full lg:w-1/2  '>
+			<div className=' lg:w-4/5 max-w-screen-lg '>
 				<div>
 					<h2 className='font-semibold text-xl text-gray-600'>Contact Form</h2>
 					<p className='text-gray-500 mb-6'>
 						Fill out this form if you have any questions, and we'll get back to you!
 					</p>
 
-					<div className='bg-white rounded shadow-lg p-4 px-4 navmd:p-8 mb-6'>
+					<div className='bg-white rounded shadow-2xl p-4 px-4 navmd:p-8 mb-6'>
 						<div className=''>
 							{/* <div className='text-gray-600'>
 								<p className='font-medium text-lg'>Personal Details</p>
@@ -106,7 +106,7 @@ function Form() {
 											Pictures related to Project
 										</label>
 										<input
-											className='form-control block w-ful px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
+											className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
 											type='file'
 											id='formFile'
@@ -215,23 +215,23 @@ function Contact() {
 				img={img1}
 				title={'Contact Us'}
 				subtitle={"Please let us know how we can help, and we'll be in touch shortly."}></Masthead>
-			<div className=' lg:flex justify-center'>
-				<section className='mt-4 p-5 lg:w-1/2'>
-					<div className='container    mx-auto mb-5 justify-around'>
-						<div className='font-medium text-2xl mb-5'>
+			<div className=' flex flex-col items-center lg:flex-row lg:items-start lg:justify-between'>
+				<section className='container flex flex-col-reverse lg:flex-col p-6 mt-4  lg:w-1/2'>
+					<div className=' mx-auto mb-10 text-textPrimary '>
+						<div className='font-medium text-textPrimary2 leading-10 font-height text-2xl mb-5'>
 							We assure your complete satisfaction throughout your window installation journey with
 							us.
 						</div>
 						<div className='ml-4 flex flex-col gap-3'>
 							<div>
-								<CheckCircleIcon className='h-7 inline mr-2'></CheckCircleIcon>
+								<CheckCircleIcon className='h-5 inline mr-2'></CheckCircleIcon>
 								<div className='inline'>
 									Our top-of-the-line Unique Windows cater to both your home and budget
 									requirements, guaranteeing optimal performance and style.
 								</div>
 							</div>
 							<div>
-								<CheckCircleIcon className='h-7 inline mr-2'></CheckCircleIcon>
+								<CheckCircleIcon className='h-5 inline mr-2'></CheckCircleIcon>
 								<div className='inline'>
 									We prioritize your preferences and prioritize understanding them. Hence, our
 									attentive team takes the time to carefully listen to your specific needs before
@@ -239,21 +239,21 @@ function Contact() {
 								</div>
 							</div>
 							<div>
-								<CheckCircleIcon className='h-7 inline mr-2'></CheckCircleIcon>
+								<CheckCircleIcon className='h-5 inline mr-2'></CheckCircleIcon>
 								<div className='inline'>
 									We take precise measurements and custom-build our products to fit seamlessly into
 									your home's unique design and style.
 								</div>
 							</div>
 							<div>
-								<CheckCircleIcon className='h-7 inline mr-2'></CheckCircleIcon>
+								<CheckCircleIcon className='h-5 inline mr-2'></CheckCircleIcon>
 								<div className='inline'>
 									After thoughtful consideration, we present you with a recommendation that best
 									suits your personal needs and preferences, so you can make an informed decision.
 								</div>
 							</div>
 							<div>
-								<CheckCircleIcon className='h-7 inline mr-2'></CheckCircleIcon>
+								<CheckCircleIcon className='h-5 inline mr-2'></CheckCircleIcon>
 								<div className='inline'>
 									We offer exceptional warranty coverage for all our Unique Window products,
 									ensuring your investment is well-protected and reliable.
@@ -261,17 +261,22 @@ function Contact() {
 							</div>
 						</div>
 					</div>
-					<div className='container mt-5 pb-5 mb-5 xl:w-1/2 mx-auto flex flex-col justify-around'>
+					<div className='text-textPrimary container mt-5 pb-5 mb-5 xl:w-1/2 mx-auto flex flex-col justify-around'>
 						<div>
-							<h1 className='text-4xl font-medium text-center '>Contact Info</h1>
+							<h1 className='text-4xl font-medium text-center text-headerPrimary'>Contact Info</h1>
 							<hr className='mx-auto'></hr>
 							<ul className='list-group list-group-flush lead '>
-								<li className='text-xl mb-2  text-center list-group-item'>
-									<span className='font-medium'>Email: </span>uniquewindowsrenovations@gmail.com
+								<li
+									style={{ fontSize: 'clamp(1rem, 2vw + 0.25rem, 1.25rem);' }}
+									className=' mb-2  text-center'>
+									<span className='text-headerPrimary font-medium'>Email: </span>
+									uniquewindowsrenovations@gmail.com
 								</li>
 								<div className='h-px my-4 bg-gray-200 border-0 dark:bg-gray-700'></div>
-								<li className='text-xl mb-2 text-center list-group-item'>
-									<span className='font-medium'>Phone Number: </span>770-990-6603
+								<li
+									style={{ fontSize: 'clamp(1rem, 2vw + 0.25rem, 1.25rem);' }}
+									className=' mb-2 text-center '>
+									<span className='text-headerPrimary font-medium'>Phone Number: </span>770-990-6603
 								</li>
 							</ul>
 						</div>

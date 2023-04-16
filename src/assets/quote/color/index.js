@@ -49,7 +49,7 @@ const colors = {
 	interior: [
 		[BlackStain, 'Black Stain'],
 		[BrightWhitePaint, 'Bright White Paint'],
-		[EarlyAmericanStain, 'Early American Stain'],
+		[EarlyAmericanStain, 'American Stain'],
 		[GoldenOakStain, 'Golden Oak Stain'],
 		[LinenWhitePaint, 'Linen White Paint'],
 		[PrefinishedWhitePaint, 'Prefinished White Paint'],

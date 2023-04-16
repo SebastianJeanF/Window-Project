@@ -13,9 +13,9 @@ export default function About() {
 		<div className='App'>
 			<Masthead img={img2} title={'ABOUT US'} subtitle={'INFORMATION ABOUT WINDOWS'}></Masthead>
 
-			<section className=' '>
+			<section className=''>
 				<div className=' mx-auto'>
-					<div className=' py-16 '>
+					<div className=' py-12  '>
 						<div className=' container  m-auto md:flex px-6 text-gray-600 md:px-12 xl:px-6'>
 							<div className='space-y-6 md:space-y-0 flex flex-col xl:items-center xl:flex-row-reverse gap-6  xl:gap-12'>
 								<div className='text-textPrimary'>
@@ -65,7 +65,7 @@ export default function About() {
 								</div>
 								<img
 									style={{ height: '50%' }}
-									className='mx-auto my-auto w-4/5 fade-right'
+									className='mx-auto my-auto w-3/5 fade-right'
 									src={img1}
 								/>
 							</div>
@@ -115,7 +115,7 @@ export default function About() {
 										</div>
 									</div>
 								</div>
-								<img className='mx-auto fade-right w-4/5' src={img3} />
+								<img className='mx-auto fade-right w-2/5' src={img3} />
 							</div>
 						</div>
 					</div>

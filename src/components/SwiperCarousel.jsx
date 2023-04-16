@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper';
 import { useEffect, useRef, useState } from 'react';
 
-import img1 from '../assets/house.jpg';
-import img2 from '../assets/window.jpg';
-import img3 from '../assets/bratislava.jpg';
+import img1 from '../assets/HomeSlider1.jpg';
+import img2 from '../assets/HomeSlider2.jpg';
+import img3 from '../assets/HomeSlider3.jpg';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -22,14 +23,13 @@ function imgUrl() {
 }
 
 function createSlide() {
-	const name = imgUrl();
 	return (
 		<SwiperSlide className='homeSwiper'>
 			<div
 				className='w-full relative  bg-cover bg-center'
-				style={{ backgroundImage: `url(${name})`, height: '40vh' }}>
+				style={{ backgroundImage: `url(${img1})`, height: '40vh' }}>
 				<div style={{ position: 'absolute', top: '40%', left: '40px' }} className='w-auto'>
-					<div className=' home block '>HIGH-QUALITY WINDOWS INSTALLATION </div>
+					<div className=' home block '>HIGH-QUALITY WINDOWS</div>
 					<div className='home-carousel-button mt-5 transition hover:bg-orange-900'>
 						VIEW OUR PRODUCTS
 					</div>
@@ -57,12 +57,11 @@ function createSlide() {
 // }
 
 function createSlide1() {
-	const name = imgUrl();
 	return (
 		<SwiperSlide>
 			<div
 				className='w-full relative bg-cover bg-center'
-				style={{ backgroundImage: `url(${name})`, height: '40vh' }}>
+				style={{ backgroundImage: `url(${img2})`, height: '40vh' }}>
 				<div
 					className='flex flex-col justify-between items-end '
 					style={{ position: 'absolute', top: '40%', right: '15%' }}>
@@ -76,12 +75,11 @@ function createSlide1() {
 	);
 }
 function createSlide2() {
-	const name = imgUrl();
 	return (
 		<SwiperSlide>
 			<div
 				className='w-full relative bg-cover bg-center'
-				style={{ backgroundImage: `url(${name})`, height: '40vh' }}>
+				style={{ backgroundImage: `url(${img3})`, height: '40vh' }}>
 				<div
 					className='flex flex-col justify-between items-end '
 					style={{ position: 'absolute', top: '40%', left: '15%' }}>
