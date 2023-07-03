@@ -56,7 +56,8 @@ export default function About() {
 									{' '}
 									<motion.div variants={title}>
 										<FaHandshake className='text-gray-800 h-10 w-10 mx-auto'></FaHandshake>
-										<div className='text-2xl text-center text-gray-800 font-bold md:text-4xl'>
+										<div // dummy
+											className='text-2xl text-center text-gray-800 font-bold md:text-4xl'>
 											Family Business
 										</div>
 									</motion.div>
